@@ -3,103 +3,245 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="Primer Modulo HTML Web Studio" content="HTML5 con destino a principiantes">
-		<title>webStudio</title>
+		<link rel="preconnect" href="https://fonts.goolgeapis.com"/>
+		<link rel="stylesheet"  href="./css/normalize.css"/>
+		<link rel="stylesheet"  href="./css/styles.css"/>
+		<title>WebStudio</title>
 	</head>	
-	<body>
-		<head>
-			<nav>
-				<ul>
-					<li><h2>WebStudio</h2></li>
-					<li>Estudio</li>
-					<li><a href="portafolio.html">portafolio.html</a></li>
-					<li>Contactos</li>
-					<li><a href="mailito:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a href="tel:+52 55 5529 6000">+52 55 5529 6000</a></li>
-				</ul>
-			</nav>
-			<div class="padre-uno">
-				<h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-				<botton type="botton">Solicite nuestro servicio</botton>				
+    <body>
+		<header>
+			<div class="container-text">
+				<nav class="flex">
+					<a class="child-textblue">WebStudio</a>					
+					<a class="nav-link">Estudio</a>
+					<a class="child-textblue" href="portafolio.html">Portafolio</a>
+					<a class="nav-link">Contactos</a>
+				</nav>
+				<div class="container-contact">
+                    <section class="container-svg0">
+                        <svg class="chid_svg-email"><use xlink:href="../imagenes/icons.svg#email"></use></svg>
+					    <a class="child-textgray" href="mailito:info@devstudio.com">info@devstudio.com</a>
+                    </section>
+                    <section class="container-svg0">
+                        <svg class="chid_svg-phone"><use xlink:href="../imagenes/icons.svg#telefono"></use></svg>
+					    <a class="child-textgray" href="tel:+525555296000">+525555296000</a>
+                    </section>    
+				</div>
 			</div>
-		</head>
+			<nav class="container">
+				<section class="container-solution opacity">
+					<h1 class="child-textwhile-solution">SOLUCIONES EFICACES PARA</h1>
+					<h1 class="child-textwhile-solution">SU NEGOCIO</h1>
+					<button class="box-dos child-textwhile">Solicite nuestro servicio</button>
+				</section>	
+			</nav>
+		</header>
 		<main>
-			<section>
-				<lu>
-					<li>
+            <section class="container">
+                <ul class="container-svg2">
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#antena"></use></svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#reloj"></use></svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#vector"></use></svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#astronauta"></use></svg>
+                    </li>
+                </ul>
+            </section>
+			<section class="container">
+				<ul class="container-boxtext">
+					<li class="child-boxtext">
 						<h3>ATENCIÓN A LOS DETALLES</h3>
-						<p>Nos adentramos en todos los detalles y<br>
+						<p class="text-gray">Nos adentramos en todos los detalles y<br>
 						 procesos de su negocio, para así<br>
 						 desarrollar una solución a su medida.</p>
+					</li>
+					<li class="child-boxtext"> 
 						<h3>PUNTUALIDAD</h3>
-						<p>Con nosotros, usted puede sentirse<br> 
+						<p class="text-gray">Con nosotros, usted puede sentirse<br> 
 						seguro y protegido. Un principio<br>
 						importante de la empresa: respetar su<br>
 						tiempo y respetar los plazos acordados.</p>
+					</li>
+					<li class="child-boxtext">
 						<h3>PLANIFICACIÓN</h3>
-						<p>Usted podrá observar y participar en<br>
+						<p class="text-gray">Usted podrá observar y participar en<br>
 						cada fase del desarrollo y aplicación de<br>
 						soluciones.</p>
+					</li>
+					<li class="child-boxtext">
 						<h3>TEGNOLOGÍA MODERNA</h3>
-						<p>Usamos herramientas innovadoras para<br>
+						<p class="text-gray">Usamos herramientas innovadoras para<br>
 						resolver las tareas asignadas. Es hora<br>
 						de simplificar los procesos laborales.</p>						  				
 					</li>
-				</lu>	
+				</ul>	
 			</section>
-			<section>
-				<lu>
-					<li>
-						<h2>A qué nos dedicamos</h2>	
-					</li>
-					<li>
-						<img src="imagenes/imagen5.jpg">	
-						<p>Busca tu diseño</p>
-					</li>						
-					<li>
-						<img src="imagenes/imagen6.jpg">
-						<p>Comparar para seleccionar lo mejor</p>
-					</li>	
-					<li>
-						<img src="imagenes/imagen7.jpg">
-						<p>Creando mi proyecto</p>	
-					</li>	
-				</lu>
+			<section class="container">
+				<ul class="container-img-text">
+					<li class="text"><h2>A qué nos dedicamos</h2></li>
+				</ul>
+			</section>		
+			<section class="container">	
+				<ul class="container-img-box">	
+					<li class="child-box-img1 opacity-img-box">
+                        <h3 class="child-textwhile opacity-img-box">APLICACIONES DE ESCRITORIO</h1>						
+					<li class="child-box-img2  opacity-img-box">
+                        <h3 class="child-textwhile opacity-img-box">APLICACIONES MÓVILES</h1>
+					<li class="child-box-img3  opacity-img-box">
+                        <h3 class="child-textwhile opacity-img-box">SOLUCIONES DE DISEÑO</h1>
+				</ul>
+			</section>	
+			<section class="container">
+				<ul class="container-img-text">
+					<li class="text"><h2>Nuestro Equipo</h2></li>
+				</ul>
 			</section>
-			<section>
-				<lu>
-					<li>
-						<h2>Nuestro equipo</h2>
-					</li>
-					<li>
-						<img src="imagenes/imagen4.jpg">
-						<p style="Top:2030px;">Andrés Cubo</p>
+			<section class="container">	
+				<ul class="container-img-box-two">	
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen4.jpg" alt="Andrés" width="270">
+						<h3 style="Top:2030px;">Andrés Cubo</h3>
 						<p style="Top:2030px;">Diseñador de Productos</p>
-					</li>
-					<li>
-						<img src="imagenes/imagen3.jpg">
-						<p>Carla Palacios</p>
+						<ul class="container-svg3">
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#instagram"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#twitter"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#facebook"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#linkedin"></use></svg>
+                            </li>
+                        </ul>						
+					</li>						
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen3.jpg" alt="Carla" width="270">
+						<h3>Carla Palacios</h3>
 						<p>Desarrolladora Frontend</p>
-					</li>
-					<li>	
-						<img src="imagenes/imagen2.jpg">
-						<p>Mario Dorado</p>
+						<ul class="container-svg3">
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#instagram"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#twitter"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#facebook"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#linkedin"></use></svg>
+                            </li>
+                        </ul>						
+					</li>	
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen2.jpg" alt="Mario" width="270">
+						<h3>Mario Dorado</h3>
 						<p>Marketing</p>
+						<ul class="container-svg3">
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#instagram"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#twitter"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#facebook"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#linkedin"></use></svg>
+                            </li>
+                        </ul>	
 					</li>
-					<li>
-						<img src="imagenes/imagen1.jpg">
-						<p>Pablo Mijangos</p>
+					<li class="child-box-img-two">
+						<img src="imagenes/imagen1.jpg" alt="Pablo" width="270">
+						<h3>Pablo Mijangos</h3>
 						<p>Diseñador IU</p>
-					</li>
-				</lu>
+						<ul class="container-svg3">
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#instagram"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#twitter"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#facebook"></use></svg>
+                            </li>
+                            <li class="child-svg3">
+                                <svg><use xlink:href="../imagenes/icons.svg#linkedin"></use></svg>
+                            </li>
+                        </ul>	
+					</li>	
+				</ul>
 			</section>
+			<section class="container">
+				<ul class="container-img-text">
+					<li class="text"><h2>Clientes Regulares</h2></li>
+				</ul>
+			</section>
+            <section class="container">
+                <ul class="container-svg2">
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#client1"></use></svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#client2"></use></svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg class="icon-vector">
+                            <use xlink:href="../imagenes/icons.svg#client3"></use>
+                        </svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg class="icon-telefono">
+                            <use xlink:href="../imagenes/icons.svg#client4"></use>
+                        </svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg class="icon-telefono">
+                            <use xlink:href="../imagenes/icons.svg#client5"></use>
+                        </svg>
+                    </li>
+                    <li class="child-svg2">
+                        <svg><use xlink:href="../imagenes/icons.svg#client6"></use></svg>
+                    </li>
+                </ul>
+            </section>		
 		</main>
-		<footer>
-			<a href="#">Web Studio</a>
-			<address>
-				<p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-				<a href="mailito:info@example.com">info@example.com</a>
-				<a href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
-			</address>
+        <footer class="container">
+            <section class="container-foot">
+                <section class="container-box-foot">
+                    <h3 class="child-textblue-foot">WebStudio</h3>
+                    <p class="child-textwhile-foot">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+                    <a class="child-textwhile-foot" href="mailito:info@devstudio.com">info@devstudio.com</a>
+                    <a class="child-textwhile-foot" href="tel:+52 55 5529 6000">+52 55 5529 6000</a>
+                </section>
+                <ul class="container-all-svg3">
+                    <li class="child-text-svg3"><h3>ENCUENTRENOS EN</h3></li>                    
+                    <ul class="container-svg3">
+                        <li class="child-svg3">
+                            <svg><use xlink:href="../imagenes/icons.svg#instagram2"></use></svg>
+                        </li>
+                        <li class="child-svg3">
+                            <svg><use xlink:href="../imagenes/icons.svg#twitter2"></use></svg>
+                        </li>
+                        <li class="child-svg3">
+                            <svg><use xlink:href="../imagenes/icons.svg#facebook2"></use></svg>
+                        </li>
+                        <li class="child-svg3">
+                            <svg><use xlink:href="../imagenes/icons.svg#linkedin2"></use></svg>
+                        </li>
+                    </ul>
+                </ul>
+            </section>
 		</footer>
 	</body>
 </html>
