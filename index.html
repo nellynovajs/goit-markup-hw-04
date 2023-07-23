@@ -28,13 +28,29 @@
                     </section>    
 				</div>
 			</div>
-			<nav class="container">
+			<section class="container">
 				<section class="container-solution opacity">
 					<h1 class="child-textwhile-solution">SOLUCIONES EFICACES PARA</h1>
 					<h1 class="child-textwhile-solution">SU NEGOCIO</h1>
-					<button class="box-dos child-textwhile">Solicite nuestro servicio</button>
+					<button class="box-dos child-textwhile" data-modal-open>Solicite nuestro servicio</button>
 				</section>	
-			</nav>
+			</section>
+            <section class="container">
+                <section class="container-modal">
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button data-modal-close>X</button>
+                            <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            
+                        </div>
+                    </div>
+                </section>          
+            </section>
 		</header>
 		<main>
             <section class="container">
@@ -234,5 +250,6 @@
                 </ul>
             </section>
 		</footer>
+        <script src="./js/modal.js"></script>
 	</body>
 </html>
