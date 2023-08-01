@@ -43,8 +43,8 @@
   flex-direction:row;
   justify-content:space-around;
   list-style: none;
-  padding: 1px;
-  margin: 1;   
+  padding: 0.1px;
+  margin: 0.1;   
 }
 
 .chid_svg-email{
@@ -407,8 +407,6 @@ html {
 .container-img-box-two-p2{
   Width: 1170px;
   Height:1360px;
-  /*color: #EEEEEE;*/
-  /*border:1px solid rgb(197, 201, 189);*/
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -426,49 +424,8 @@ html {
   Height: 404px;
 }
 
-/*tarea 5 cards*/
+/*contenido modal tarea 5 y tarea 6*/
 
-.card-container{
-  width: 370px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
- }
-
- .card-container:hover{
-  box-shadow: 0px 1px 1px rgba(0,0,0,0.12), 0px 4px 4px rgba(0,0,0,0.6), 1px 4px 6px rgba(0,0,0,0.16);
- }
-
-.card-body{
-  padding: 20px 24px;
-}
-
-.card-animation{
-  position: absolute;
-  top:0;
-  height: 294px;
-  width: 370px;
-  background: rgba(33,150,243,0.9);
-  padding: 63px 24px;
-  transform: translateY(105%);
-  transition: transform 250ms ease;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-paragraph{
-  letter-spacing: 0.03em;  
-  color: #FFFFFF;
-}
-
-.card-container:hover .card-animation{
-  transform: translateY(0%);
-}
-
-.card-image{
-  position: relative;
-  overflow:hidden;
-}
-
-/*contenido modal */
 .backdrop.is-hidden{
   visibility: hidden;
   opacity: 0;
@@ -487,28 +444,11 @@ html {
   transition: opacity 250ms cubic-bezier(0.4,0,0.2,1), visibility 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-label{
-  display: block;
-  margin-top:1em;
-}
-
-label:focus-within{
-  font-weight: bold;
-}
-
-.container-modal{
-  position: fixed;
-  margin:auto;
-  display:grid;
-  gap: 1em;
-  place-items: center;
-
-}
-
 .modal{
   width: 530px;
   height: 580px;
   position:absolute;
+  border:1px solid rgb(76, 110, 9);
   margin: auto;
   top: 0;
   left: 0;
@@ -523,13 +463,40 @@ label:focus-within{
   font-family: 'Roboto, Comic Sans MS';
 }
 
+.form-title{
+  width: 448px;
+  height: 23px;
+  margin-top: 45px;
+  margin-right: 40px;
+  max-width: 420px;
+  margin:0.1px;
+  padding: 10px,20px;
+  font-size: 18px;
+  align-items:center;
+  color: #212121;
+}
+
+.container-form{
+  Width:440px;
+  Height: 342px;
+  position:absolute;
+  /*border: 1px solid rgb(112, 7, 7);*/
+  margin:0.1px;
+  margin-top: 55px;
+  margin-right: 40px;
+  max-width: 420px;
+
+  color:#757575;
+  border-radius: 3px;
+}
+
 .modal button{
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #ffffff;
   margin: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  /*border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
 
@@ -537,17 +504,26 @@ label:focus-within{
   visibility: hidden;
 }
 
-.modal-form-input{
-  display:block;
-  outline:none;
-  border: 1px solid rgba(33,33,33);
-  height:40px;
-  width: 100%;
-  padding-left: 40px;
+label{
+  display: block;
+  margin-top:1em;
+  margin: 0.1px;
 }
 
-.modal-form-input:hover, .modal-form-input:focus{
-  border:1px solid #2196F3;
+label:focus-within{
+  font-weight: bold;
+}
+
+/*Nombre, email, phone */
+.modal-form-input{
+  width:440px;
+  height:40px;
+  display:block;
+  outline:none;
+  /*border: 1px solid rgb(111, 109, 109);*/
+  max-width: 420px;
+  padding:1px;
+  font-size: 0.8em;
 }
 
 .modal-form-input:hover + .modal-form-svg,
@@ -555,12 +531,27 @@ label:focus-within{
   border:1px solid #2196F3;
 }
 
+/*comentarios*/
+.modal-form-input-one{
+  width:440px;
+  height:120px;
+  display:block;
+  outline:none;
+  /*border: 1px solid rgb(233, 21, 21);*/
+  max-width: 420px;
+}
+
+.modal-form-input-one:hover, .modal-form-input-one:focus{
+  border:1px solid #2196F3;
+}
+
 .modal-form-svg{
-  width:12px;
-  height: 12px;
+  width:18px;
+  height: 18px;
   position:absolute;
   top:14px;
   left:15px;
+  fill:#212121
 }
 
 .modal-form-svg:hover{
@@ -570,5 +561,119 @@ label:focus-within{
   position:relative;
 }
 
+.text-field{
+  width:100%;
+}
+
+.input{
+  width: 448px;
+  height: 40px;
+  background-color: transparent;
+  border:none;
+  border-bottom: 1px solid var(--second-title-color);
+  outline: none;
+}
+
+.input-label{
+  display: flex;
+}
+
+.form-field{
+  width: 425px;
+  height: 40px;
+  display: flex;
+  justify-content:row;
+  /*padding: 12px 32px;*/
+}
+
+.btn{
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius:3px;
+  display:inline-block;
+  padding: 20px, 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.btn-blue{
+  color:white;
+  background-color: #2196F3;
+}
+
+.btn-blue:hover{
+  background-color: #1976d2;
+}
+
+.btn-blue:active{
+  background-color:#1976d1;
+}
+
+.center-content{
+  text-align: center;
+}
+
+.container-contact-complete{
+  width:570px;
+  height:86px;
+  border: 1px solid rgb(233, 21, 21);
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  padding: 40 px;
+  margin: 0.1;
+}
+.container-contact{
+  width:570px;
+  height:80px;
+  /*border: 1px solid rgb(233, 21, 21);*/
+  display:flex;
+  flex-direction:row;
+  list-style: none;
+  /*padding: 0.01px;*/
+  margin: 0.1;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding: 60px 0.1px;
+
+}
+
+.footer-subribe{
+  width:358px;
+  height:50px;
+  display:block;
+  outline:none;
+  border: 1px solid rgb(7, 76, 126);
+  max-width: 420px;
+  background: #2F303A;
+  color: #FFFFFF;
+}
+
+.btn-properties{
+  width: 200px;
+  height:50px;
+  font-size: 16px;
+  border-radius:3px;
+  margin:0.01px;
+  display:inline-block;
+  text-align: center;
+  text-decoration:none;
+  
+}
+
+.input-suscribe{
+  font-size: 14px;
+  margin:0.1px;
+}
+
+.chid_svg-send{
+  Width:24px;
+  Height:24px;
+  padding: 0.1px;
+  margin: 0.1;  
+}
 
 

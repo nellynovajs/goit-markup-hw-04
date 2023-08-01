@@ -39,14 +39,54 @@
                 <section class="container-modal">
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <button data-modal-close>X</button>
-                            <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate 
-                                velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            
+                            <button data-modal-close>
+                                X
+                            </button>
+                            <div class="form-title">
+                                <h3>Deje tus datos, nos contactaremos con usted</h3>
+                            </div>
+                            <form class="container-form">                                
+                                <label for="input-name">Nombre</label>
+                                <div class="pos-relative">
+                                    <input class="modal-form-input" type="text" name="name" id="input-name" required>
+                                    <svg class="modal-form-svg">
+                                        <use xlink:href="../images/icons.svg#black-person"></use>
+                                    </svg>
+                                </div>
+                                <label for="input-phone">
+                                    Phone
+                                </label>
+                                <div class="pos-relative">
+                                    <input class="modal-form-input" type="phone" name="phone" id="input-phone" required>
+                                    <svg class="modal-form-svg">
+                                        <use xlink:href="../images/icons.svg#black-phone"></use>
+                                    </svg>
+                                </div>
+                                <label for="input-email">
+                                    Email
+                                </label>
+                                <div class="pos-relative">
+                                    <input class="modal-form-input" type="email" name="email" id="input-email" required>
+                                    <svg class="modal-form-svg">
+                                        <use xlink:href="../images/icons.svg#black-email"></use>
+                                    </svg>
+                                </div>
+
+                                <label for="input-feedback">
+                                    Comentarios
+                                </label>                                
+                                <div class="pos-relative">
+                                    <textarea class="modal-form-input-one" name="feedback" rows="5" placeholder="Enter your message here..."></textarea>   
+                                </div>
+                                <div class="form-field">
+                                    <input type="checkbox" name="condition" id="condition">                               
+                                    <label class="form-label" 
+                                    for="codition">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
+                                </div>                              
+                                <p class="center-content">
+                                    <input type="submit" class="btn btn-blue" value="Enviar">
+                                </p>
+                            </form>
                         </div>
                     </div>
                 </section>          
@@ -248,8 +288,20 @@
                         </li>
                     </ul>
                 </ul>
+                <section class="container-contact">
+                    <label for="input-suscribe">
+                        SUSCRÍBASE AL BOLETIN INFORMATIVO
+                    </label>
+                    <div class="pos-relative">
+                        <input class="footer-subribe" type="email" name="suscribe" id="input-suscribe" rows="5" placeholder="Correo electrónico" required>
+                    </div>
+                    <button class="btn-properties btn btn-blue" type="submit">
+                        Suscríbase
+                        <svg class="chid_svg-send"><use xlink:href="../images/icons.svg#send"></use></svg>                  
+                    </button>  
+                </section>                
             </section>
-		</footer>
+		</footer> 
         <script src="./js/modal.js"></script>
 	</body>
 </html>
